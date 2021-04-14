@@ -50,9 +50,7 @@ const item3 = new Item({
 
 
 const defaultItems = [item1, item2, item3];
-//
-// const items = ["Buy Food", "Cook Food", "Eat Food"];
-// const workItems = [];
+
 
 app.post("/", function(req, res) {
 
@@ -138,16 +136,6 @@ List.findOne({name: customListName}, function(err, result){
 });
 });
 
-
-// res.redirect("/"+ listName);
-// else {
-// const list = new List({
-//   name: customListName,
-//   items: defaultItems
-// });
-// res.redirect("/" + listName);
-// }
-// });
 
 
 app.get("/about", function(req, res) {
